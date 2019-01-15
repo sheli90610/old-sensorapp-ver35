@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Notification Bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Action Bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Action Bar Text Color -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!-- Window BackGround -->
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <!-- Navigation Bar Coolor -->
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+    <style name="SplashTheme2" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/splash_dialog</item>
+    </style>
+    <style name="MainPageTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Notification Bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Action Bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Action Bar Text Color -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!-- Window BackGround -->
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <!-- Navigation Bar Coolor -->
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WhiteAccent" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">#FFF</item>
+    </style>
+
+    <style name="PickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#33b5e5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Heading">
+        <item name="android:textColor">@color/TextColor4</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:layout_marginStart">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SubHeading">
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SubHeadingValue">
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="recyclerView">
+        <item name="android:textColor">@color/TextColor1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/menu_shape</item>
+
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@color/TextColor5</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+
+    <style name="TextAppearanceSpinner">
+        <item name="android:textColor">@color/TextColor</item>
+    </style>
+
+    <style name="RippleView">
+        <item name="android:foreground">@drawable/ripple_foreground_grey</item>
+    </style>
+
+</resources>

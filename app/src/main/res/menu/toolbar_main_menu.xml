@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/menuMic"
+            android:icon="@drawable/microphone"
+            app:showAsAction="ifRoom"
+            android:title="Compose">
+        </item>
+        <item
+            android:id="@+id/menuAccount"
+            android:icon="@drawable/account"
+            app:showAsAction="ifRoom"
+            android:title="Profile">
+        </item>
+
+        <item
+            android:id="@+id/menuVertical"
+            android:icon="@drawable/menu_vertical_dots"
+            app:showAsAction="ifRoom"
+            android:title="menu">
+        </item>
+
+        <group
+            android:id="@+id/group_main_end"
+            android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_end"
+                    android:title="" />
+        </group>
+</menu>

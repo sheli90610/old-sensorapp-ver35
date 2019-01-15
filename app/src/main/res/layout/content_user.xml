@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    tools:context="com.amazonaws.youruserpools.UserActivity">
+
+    <TextView
+        android:id="@+id/textViewUserDetailsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="You are signed in as"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/TextColor1"
+        android:textStyle="bold" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_inter_group_separation"
+        android:layout_below="@+id/textViewUserDetailsMessage"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/listViewUserAttributes"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/space3"
+        android:layout_alignEnd="@id/space4"
+        android:backgroundTint="@color/TextColor1" />
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_intra_group_separation"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/buttonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="149dp"
+        android:text="Continue"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/audioRecordView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fileSystemView"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/fileSystemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/coarseLocationView"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/coarseLocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locationServicesView"
+        android:layout_alignParentStart="true"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/locationServicesView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnContinue"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="20dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
+
+

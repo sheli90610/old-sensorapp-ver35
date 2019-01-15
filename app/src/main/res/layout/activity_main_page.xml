@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_main">
+
+        <ImageView
+            android:id="@+id/devicesBtn"
+            style="@style/MenuStyle"
+            android:contentDescription="TODO"
+            android:src="@drawable/list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shareBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/shareBtn"
+            style="@style/MenuStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/devicesBtn"
+            app:layout_constraintEnd_toStartOf="@+id/thermostatBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/devicesBtn"
+            app:layout_constraintTop_toTopOf="@+id/devicesBtn"
+            app:srcCompat="@drawable/family" />
+
+        <ImageView
+            android:id="@+id/thermostatBtn"
+            style="@style/MenuStyle"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/shareBtn"
+            app:layout_constraintEnd_toStartOf="@+id/cameraBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shareBtn"
+            app:layout_constraintTop_toTopOf="@+id/shareBtn"
+            app:srcCompat="@drawable/thermostat" />
+
+        <ImageView
+            android:id="@+id/cameraBtn"
+            style="@style/MenuStyle"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@+id/thermostatBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/thermostatBtn"
+            app:layout_constraintTop_toTopOf="@+id/thermostatBtn"
+            app:srcCompat="@drawable/camera" />
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</android.support.constraint.ConstraintLayout>

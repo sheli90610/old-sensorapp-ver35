@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/twentyFourHoursImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/graph_period_twentyfour"
+        app:layout_constraintBottom_toTopOf="@+id/sevenDaysImg"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sevenDaysImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/graph_period_week"
+        app:layout_constraintBottom_toTopOf="@+id/thirtyDaysImg"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twentyFourHoursImg" />
+
+    <ImageView
+        android:id="@+id/thirtyDaysImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/graph_period_month"
+        app:layout_constraintBottom_toTopOf="@+id/enterCostBtn"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sevenDaysImg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/twentyFourHoursImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twentyFourHoursImg"
+        app:layout_constraintTop_toTopOf="@+id/twentyFourHoursImg">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="(Last 24 Hours)"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/twentyFourHoursImg"
+            app:layout_constraintStart_toEndOf="@+id/twentyFourHoursImg"
+            app:layout_constraintTop_toTopOf="@+id/twentyFourHoursImg" />
+
+        <TextView
+            android:id="@+id/pow24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="powpow"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/twentyFourHoursImg"
+            app:layout_constraintEnd_toStartOf="@+id/cost24"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/twentyFourHoursImg"
+            app:layout_constraintTop_toBottomOf="@+id/twentyFourHoursImg" />
+
+        <TextView
+            android:id="@+id/cost24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Total Cost:"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pow24"
+            app:layout_constraintStart_toEndOf="@+id/pow24"
+            app:layout_constraintTop_toTopOf="@+id/pow24"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/highTimeCostView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="High Cost:"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lowTimeCostView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Low Cost:"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/sevenDaysImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sevenDaysImg"
+        app:layout_constraintTop_toTopOf="@+id/sevenDaysImg">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="(Last 7 Days)"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sevenDaysImg"
+            app:layout_constraintStart_toEndOf="@+id/sevenDaysImg"
+            app:layout_constraintTop_toTopOf="@+id/sevenDaysImg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/pow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="powpow"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sevenDaysImg"
+            app:layout_constraintEnd_toStartOf="@+id/cost7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sevenDaysImg"
+            app:layout_constraintTop_toBottomOf="@+id/sevenDaysImg" />
+
+        <TextView
+            android:id="@+id/cost7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="-"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pow7"
+            app:layout_constraintStart_toEndOf="@+id/pow7"
+            app:layout_constraintTop_toTopOf="@+id/pow7"
+            app:layout_constraintVertical_bias="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/thirtyDaysImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirtyDaysImg"
+        app:layout_constraintTop_toTopOf="@+id/thirtyDaysImg">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="(Last 30 Days)"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <TextView
+            android:id="@+id/pow30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="powpow"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="500dp" />
+
+        <TextView
+            android:id="@+id/cost30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="-"
+            android:textColor="@color/TextColor1"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="290dp"
+            tools:layout_editor_absoluteY="497dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enterCostBtn"
+        style="@style/buttonStyle"
+        android:text="Enter Cost"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirtyDaysImg" />
+
+
+</android.support.constraint.ConstraintLayout>

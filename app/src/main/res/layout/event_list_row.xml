@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+    <RelativeLayout
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/stateIcon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventId"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/stateIcon"
+            android:textColor="@color/TextColor1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/eventName"
+            android:layout_alignBottom="@+id/eventName"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/eventName"
+            android:text="at"
+            android:textColor="@color/TextColor1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/at"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toEndOf="@+id/at"
+            android:textColor="@color/TextColor1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/eventId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/stateIcon"
+            android:textColor="@color/TextColor1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
